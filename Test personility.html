@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Five Personality Test</title>
+  <style>
+    /* Add CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333333;
+      line-height: 1.6;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #00ff0d;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #personalityTestForm {
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .questions {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    select {
+      margin-bottom: 16px;
+    }
+
+    #results {
+      color: #0c1018;
+      font-size: 16px;
+      margin-top: 20px;
+      border: 2px solid #00b324;
+      padding: 10px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    button {
+      background-color: #04ff00;
+      color: #0c1018;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .submit-button-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Big Five Personality Test</h1>
+  <form id="personalityTestForm">
+    <!-- Questions for each trait, you can add more questions as needed -->
+    <!-- Openness -->
+    <!-- ... (The rest of the form from the first code) -->
+    <fieldset class="questions">
+      <legend>Openness:</legend>
+      <!-- Add questions here -->
+      <label
+        >Question 1: Do you enjoy exploring new ideas and concepts, even if they challenge your current beliefs?</label
+      >
+      <select name="openness_q1">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+  
+      <label
+        >Question 2: Are you often drawn to creative activities such as art, music, or writing?</label
+      >
+      <select name="openness_q2">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+  
+      <label
+        >Question 3: Do you find yourself daydreaming and pondering abstract or philosophical questions?</label
+      >
+      <select name="openness_q3">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+  
+      <label
+        >Question 4: Are you excited by the prospect of traveling to new and unfamiliar places?</label
+      >
+      <select name="openness_q4">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+  
+      <label
+        >Question 5: Do you prefer courses or activities that allow for independent thinking and creative expression?</label
+      >
+      <select name="openness_q5">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+    </fieldset>
+  
+    <!-- Conscientiousness -->
+    <fieldset class="questions">
+      <legend>Conscientiousness:</legend>
+      <!-- Add questions here -->
+      <label
+        >Question 1: Are you known for your strong attention to detail and organization in both work and daily life?</label
+      >
+      <select name="conscientiousness_q1">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 2: Do you feel a sense of accomplishment when you complete tasks on time or ahead of schedule?</label
+      >
+      <select name="conscientiousness_q2">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 3: Are you diligent about making to-do lists and setting specific goals?</label
+      >
+      <select name="conscientiousness_q3">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 4: Do you tend to plan things carefully and avoid last-minute changes or improvisation?</label
+      >
+      <select name="conscientiousness_q4">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 5: Are you often the one who takes charge and ensures that projects are executed efficiently?</label
+      >
+      <select name="conscientiousness_q5">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+  
+      <!-- Add more questions for Conscientiousness here -->
+    </fieldset>
+    <fieldset class="questions">
+      <legend>Extraversion:</legend>
+      <!-- Add questions here -->
+      <label
+        >Question 1:Do you feel energized and more comfortable in social gatherings and group settings?</label
+      >
+      <select name="extraversion_q1">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 2: Are you typically the one to initiate conversations and enjoy meeting new people?</label
+      >
+      <select name="extraversion_q2">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 3: Do you find it easy to express your thoughts and emotions openly to others?</label
+      >
+      <select name="extraversion_q3">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 4: Are you drawn to activities and hobbies that involve social interaction or teamwork?</label
+      >
+      <select name="extraversion_q4">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 5: Would you describe yourself as outgoing and enthusiastic about engaging with the world around you?</label
+      >
+      <select name="extraversion_q5">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <!-- Add more questions for Conscientiousness here -->
+    </fieldset>
+    <fieldset class="questions">
+      <legend>Agreeableness:</legend>
+      <!-- Add questions here -->
+      <label
+        >Question 1: Are you naturally empathetic and concerned about the well-being of others?</label
+      >
+      <select name="agreeableness_q1">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 2: Do you prefer cooperation and compromise over competition and conflict?</label
+      >
+      <select name="agreeableness_q2">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 3: Are you often sought after for advice or as a mediator in disputes?</label
+      >
+      <select name="agreeableness_q3">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 4: Do you find fulfillment in helping and supporting others in various aspects of life?</label
+      >
+      <select name="agreeableness_q4">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 5: Would you describe yourself as kind, compassionate, and considerate of others' feelings?</label
+      >
+      <select name="agreeableness_q5">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+  
+      <!-- Add more questions for Conscientiousness here -->
+    </fieldset>
+    <fieldset class="questions">
+      <legend>Neuroticism:</legend>
+      <!-- Add questions here -->
+      <label
+        >Question 1: Do you tend to worry about future events or situations even when there is no immediate cause for concern?</label
+      >
+      <select name="neuroticism_q1">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 2: Are you easily affected by stress and often experience intense emotional reactions?</label
+      >
+      <select name="neuroticism_q2">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 3: Do you find it challenging to stay calm and composed in high-pressure situations?</label
+      >
+      <select name="neuroticism_q3">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 4: Are you frequently preoccupied with negative thoughts or fears?</label
+      >
+      <select name="neuroticism_q4">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <label
+        >Question 5: Does uncertainty and unpredictability in life cause you significant distress?</label
+      >
+      <select name="neuroticism_q5">
+        <!-- Corrected the name attribute to be unique -->
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+    <div class="submit-button-container">
+      <button type="button" onclick="calculatePersonality()">Submit</button>
+    </div>
+  </form>
+
+  <div id="results">
+    <ul>
+      <li>Openness:</li>
+      <li>Conscientiousness:</li>
+      <li>Extraversion:</li>
+      <li>Agreeableness:</li>
+      <li>Neuroticism:</li>
+    </ul>
+  </div>
+
+  <!-- Move the script tag containing the JavaScript code here -->
+  <script>
+    function calculatePersonality() {
+      const form = document.getElementById("personalityTestForm");
+      const resultsDiv = document.getElementById("results");
+    
+      const traits = [
+        "Openness",
+        "Conscientiousness",
+        "Extraversion",
+        "Agreeableness",
+        "Neuroticism",
+      ];
+      const traitScores = [];
+    
+      // Loop through each trait and calculate the percentage
+      for (const trait of traits) {
+        let positiveAnswers = 0;
+    
+        // Find the corresponding fieldset for the trait
+        let traitFieldset;
+        const legends = form.querySelectorAll("fieldset legend");
+        for (const legend of legends) {
+          if (legend.textContent.includes(trait)) {
+            traitFieldset = legend.parentNode;
+            break;
+          }
+        }
+    
+        // Randomly select 7 questions for each trait
+        const questions = Array.from(traitFieldset.querySelectorAll("label"));
+        const selectedQuestions = questions
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 7);
+    
+        for (const question of selectedQuestions) {
+          const selectElement = question.nextElementSibling;
+          const answer = parseInt(selectElement.value);
+          positiveAnswers += answer;
+        }
+    
+        // Calculate the percentage
+        const percentage = (positiveAnswers / 5) * 100;
+        traitScores.push(percentage.toFixed(2)); // Keep scores as strings
+      }
+    
+      // Check if all traitScores are 100
+      const allScoresAreHundred = traitScores.every(score => score === "100.00");
+    
+      if (allScoresAreHundred) {
+        resultsDiv.innerText = "No main personality. Sorry.";
+      } else {
+        // Determine the main personality based on the trait with the highest score
+        const traitScoresAsNumbers = traitScores.map(score => parseFloat(score));
+        const maxScore = Math.max(...traitScoresAsNumbers);
+        const maxScoreIndex = traitScoresAsNumbers.indexOf(maxScore);
+        const mainTrait = traits[maxScoreIndex];
+        const mainPersonality = `Your main personality trait is: ${mainTrait}`;
+    
+        // Define job suggestions for each personality trait
+        const jobSuggestions = {
+          Openness: [
+            "Artist",
+            "Research Scientist",
+            "Writer/Author",
+            "Travel Blogger",
+            "University Professor",
+          ],
+          Conscientiousness: [
+            "Accountant",
+            "Project Manager",
+            "Quality Assurance Analyst",
+            "Surgeon",
+            "Engineer",
+          ],
+          Extraversion: [
+            "Sales Representative",
+            "Event Planner",
+            "Public Relations Specialist",
+            "Teacher/Trainer",
+            "Tour Guide",
+          ],
+          Agreeableness: [
+            "Social Worker",
+            "Nurse",
+            "Mediator",
+            "Customer Service Representative",
+            "Human Resources Manager",
+          ],
+          Neuroticism: [
+            "Clinical Psychologist",
+            "Crisis Counselor",
+            "Emergency Medical Technician (EMT)",
+            "Air Traffic Controller",
+            "Risk Analyst",
+          ],
+        };
+    
+        // Display the results to the user
+        let resultString = `${mainPersonality}\n`;
+    
+        // Add job suggestions based on the main personality
+        if (jobSuggestions[mainTrait]) {
+          resultString += `\nHere are some job suggestions for you:\n${jobSuggestions[mainTrait].join(", ")}`;
+        }
+    
+        // Display the results on the DOM
+        resultsDiv.innerText = resultString;
+      }
+    }
+    </script>
+    
+    
+</body>
+
+</html>
