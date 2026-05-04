@@ -58,4 +58,3 @@ This helps me build applications that are easier to understand, maintain, test, 
 ## Contact
 
 - Email: lefadidintle@gmail.com
-- GitHub: [github.com/LDidintle](https://github.com/LDidintle)
